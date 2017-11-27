@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { HeaderComponent } from './header/header.component';
-import {NextGameComponent} from './next-game/next-game.component'
+import {NextGameComponent} from './next-game/next-game.component';
+import { CalendarComponent } from './calendar/calendar.component'
 
 
 const appRoutes: Routes = [
   { path: '', component: NextGameComponent},
   { path: 'signup', component: SignUpComponent},
   { path: 'signin', component: SignInComponent},
+  { path: 'calendar', component: CalendarComponent},
   { path: 'nextgame', component: NextGameComponent}
 ];
 
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     SignUpComponent,
     SignInComponent,
     NextGameComponent,
-    HeaderComponent
+    HeaderComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
